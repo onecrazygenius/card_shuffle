@@ -25,6 +25,12 @@ class Deck:
             self.cards[i], self.cards[r] = self.cards[r], self.cards[i]
 
     def drawCard(self, n=1):
+        # Validate n > 0
+        if n < 1:
+            return None
+        # Validate n <= len(self.cards)
+        if n > len(self.cards):
+            return None
         hand = []
         for i in range(n):
             hand.append(self.cards.pop())
