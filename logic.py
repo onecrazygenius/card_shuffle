@@ -13,6 +13,7 @@ class Deck:
     def __init__(self):
         self.cards = []
         self.build()
+        self.shuffle()
 
     def build(self):
         for s in ["s", "c", "d", "h"]:
