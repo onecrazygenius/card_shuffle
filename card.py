@@ -21,15 +21,15 @@ class Card:
     def __str__(self):
         match self.id:
             case 1:
-                return str('Ace of ', self.suit)
+                return str('Ace of ' + self.suit)
             case 11:
-                return str('Jack of ', self.suit)
+                return str('Jack of ' + self.suit)
             case 12:
-                return str('Queen of ', self.suit)
+                return str('Queen of ' + self.suit)
             case 13:
-                return str('King of ', self.suit)
+                return str('King of ' + self.suit)
             case other:
-                return str(self.id, ' of ', self.suit)
+                return str( str(self.id) + ' of ' + self.suit)
 
 
 
